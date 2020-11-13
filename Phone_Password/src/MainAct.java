@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
 class Phone {
-	String name;
+	String name; // í•„ë“œ ë³€ìˆ˜ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ ë©¤ë²„ë³€ìˆ˜ 
 	private int pw;
 	int num;
 	Phone(){
 	}
-	void setPw(int pw) { // setter ÆĞ½º¿öµå
+	void setPw(int pw) { // setter íŒ¨ìŠ¤ì›Œë“œ
 		this.pw = pw;
 	}
 
 	int getPw() {
 		return this.pw;
 	}
-
+	
 	Phone(String name, int pw, int num) {
 		this.name = name;
 		this.pw = pw;
@@ -23,25 +23,25 @@ class Phone {
 
 	boolean checkPw(int pw) {
 		if (this.pw == pw) {
-			System.out.println("[Àá±İÇØÁ¦]");
+			System.out.println("[ì ê¸ˆí•´ì œ]");
 			return true;
 		} else {
-			System.out.println("ºñ¹Ğ¹øÈ£ ¿À·ù");
+			System.out.println("ë¹„ë°€ë²ˆí˜¸ ì˜¤ë¥˜");
 			return false;
 		}
 	}
 
 	void show() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ºñ¹Ğ¹øÈ£ ÀÔ·Â >");
+		System.out.print("ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ >");
 		int pw = sc.nextInt();
 		if (checkPw(pw)) {
-			System.out.println((this.name + "´ÔÀÇ ¹øÈ£´Â [" + this.num + "] ÀÔ´Ï´Ù."));
+			System.out.println((this.name + "ë‹˜ì˜ ë²ˆí˜¸ëŠ” [" + this.num + "] ì…ë‹ˆë‹¤."));
 		}
 	}
 
 }
-class SmartPhone extends Phone{ //½º¸¶Æ®ÆùÀº ÆùÀÌ¶ó´Â Å¬·¡½º¸¦ »ó¼Ó¹Ş´Â´Ù
+class SmartPhone extends Phone{ //ìŠ¤ë§ˆíŠ¸í°ì€ í°ì´ë¼ëŠ” í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ëŠ”ë‹¤
 	public SmartPhone(String name,int pw, int num) {
 		super(name, pw, num);
 	}
@@ -49,17 +49,17 @@ class SmartPhone extends Phone{ //½º¸¶Æ®ÆùÀº ÆùÀÌ¶ó´Â Å¬·¡½º¸¦ »ó¼Ó¹Ş´Â´Ù
 	}
 	void changePw(int newpw) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÇöÀç ºñ¹Ğ¹øÈ£ ÀÔ·Â >");
+		System.out.print("í˜„ì¬ ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ >");
 		int pw = sc.nextInt();
 		if(checkPw(pw)) {
-			setPw(newpw); // º¸¾È µÇ¾îÀÖ´Â pw¸¦ »õ·Î¿î ÀÔ·Â°ªÀ¸·Î ¼¼ÆÃÇÏ±â À§ÇØ ºÒ·¯¿À±â
-			System.out.print("º¯°æÇÒ ºñ¹Ğ¹øÈ£ ÀÔ·Â >");
+			setPw(newpw); // ë³´ì•ˆ ë˜ì–´ìˆëŠ” pwë¥¼ ìƒˆë¡œìš´ ì…ë ¥ê°’ìœ¼ë¡œ ì„¸íŒ…í•˜ê¸° ìœ„í•´ ë¶ˆëŸ¬ì˜¤ê¸°
+			System.out.print("ë³€ê²½í•  ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ >");
 			newpw = sc.nextInt();
 			this.getPw(); //
 
-			System.out.println("ºñ¹Ğ¹øÈ£ º¯°æ ¿Ï·á");
+			System.out.println("ë¹„ë°€ë²ˆí˜¸ ë³€ê²½ ì™„ë£Œ");
 		}else {
-			System.out.println("ÇöÀç ºñ¹Ğ¹øÈ£°¡ ´Ù¸¨´Ï´Ù. º¯°æ ½ÇÆĞ");
+			System.out.println("í˜„ì¬ ë¹„ë°€ë²ˆí˜¸ê°€ ë‹¤ë¦…ë‹ˆë‹¤. ë³€ê²½ ì‹¤íŒ¨");
 		}
 	}
 }
@@ -69,17 +69,22 @@ public class MainAct {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		Phone p1 = new Phone("È«±æµ¿", 1234, 1073500816);
+		Phone p1 = new Phone("í™ê¸¸ë™", 1234, 1073500816);
+		// ì¸ìŠ¤í„´ìŠ¤í™” == ê°ì²´í™” == 
 		p1.show();
 		
 		
 		SmartPhone sp1 = new SmartPhone();
-		System.out.print("\nÈ¸¿ø °¡ÀÔ-\nÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+							new SmartPhone();
+		SmartPhone sp2 = new SmartPhone();
+		
+		
+		System.out.print("\níšŒì› ê°€ì…-\nì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		sp1.name = sc.next();
-		sc.nextLine(); //¹öÆÛ
-		System.err.print("ÀüÈ­¹øÈ£ ÀÔ·Â :");
+		sc.nextLine(); //ë²„í¼
+		System.err.print("ì „í™”ë²ˆí˜¸ ì…ë ¥ :");
 		sp1.num = sc.nextInt(); 
-		System.out.println("ºñ¹Ğ¹øÈ£ ¼³Á¤");
+		System.out.println("ë¹„ë°€ë²ˆí˜¸ ì„¤ì •");
 		int pw = sc.nextInt();
 		sp1.setPw(pw);
 		sp1.show();

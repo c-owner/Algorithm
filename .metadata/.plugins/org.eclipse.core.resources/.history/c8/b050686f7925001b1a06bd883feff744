@@ -1,0 +1,58 @@
+package Lv1;
+
+import java.util.Scanner;
+
+public class ex1 {
+	
+	static String[] show() {
+		String temp[] = new String[20];
+		for(int i = 0; i < temp.length; i++) {
+			temp[i] = null;
+		}
+		return temp;
+	}
+
+	public static void main(String[] args) {
+		/* 사이냅소프트 면접 문제 
+		 * 
+		 * 주어진 문자열(공백 없이 쉼표로 구분되어 있음)을 가지고 아래 문제에 대한 프로그램을 작성
+		 * 이유덕,이재영,권종표,이재영,박민호,강상희,이재영,
+		 * 김지완,최승혁,이성연,박영서,박민호,전경헌,송정환,
+		 * 김재성,이유덕,전경헌
+		 *
+		 * 1. 김씨와 이씨는 각각 몇 명인가. 
+		 * 2. 이재영 이라는 이름이 몇 번 반복 되는가. 
+		 * 3. 중복을 제거한 이름을 출력 
+		 * 4. 중복을 제거한 이름을 오름차순으로 정렬 출력
+		 */
+		Scanner sc = new Scanner (System.in);
+		String[] exName = new String[17];
+		int sel = 0;
+
+		while(true) {
+			System.out.println("Select Menu");
+			sel = sc.nextInt();
+			switch(sel) {
+			case 1:
+			System.out.println("이름을 넣으세요. 중간에 끝내려면 0");
+			for(int i = 0; i < exName.length; i++) {
+				System.out.print(" >");
+				exName[i] = sc.next();
+			}
+			ex1.show();
+			break;
+			
+			
+			case 2:
+			case 3:
+				default : break;
+			}
+
+
+		}
+
+	}
+	
+	
+
+}
