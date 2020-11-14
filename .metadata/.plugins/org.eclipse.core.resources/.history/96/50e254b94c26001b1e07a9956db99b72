@@ -1,0 +1,44 @@
+package Lv1;
+
+public class ex6 {
+
+	static int sec = 0;
+	static int min = 0;
+	static int hour = 0;
+	static int time3 = 0; // 3이 나오는 시간을 카운트
+	void digitalMethod() {
+		for (int i = 0; i < 24; i ++ ) {
+			if(i == 3 || i == 13 || i == 23 ) {
+				time3+=60; // 60분으로
+				continue;
+			} else for(int m = 0; m < 6; m++) {
+				
+			}
+		}
+	}
+	
+	static int minMethod() { // 분을 초로 환산 메소드
+		min = sec/60; 
+		return min;
+	}
+	static int hourMethod() { // 시간 단위를 초로 환산
+		
+		return hour;
+	}
+	
+	public static void main(String[] args) {
+
+		
+//		디지털 시계에 하루동안(00:00~23:59) 3이 표시되는 시간을 초로 환산하면 총 몇 초(second) 일까요?
+//				디지털 시계는 하루동안 다음과 같이 시:분(00:00~23:59)으로 표시됩니다.
+//					00:03분이면 60초간 지속됩니다.
+//						3이 표시되는 시간을 60초로 환산 -> 180초가 되겠지요. 
+//					 또 13분을 60초로 환산하면 780초가 되겠네요. 이전의 180초를 780초에 더해서 이런식으로 합을
+//							이어가면 되겠네요.
+
+		System.out.println();
+		System.out.println(minMethod());
+		
+	}
+
+}
