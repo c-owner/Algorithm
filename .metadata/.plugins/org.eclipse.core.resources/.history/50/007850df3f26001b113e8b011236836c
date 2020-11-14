@@ -10,9 +10,6 @@ public class ex4 {
 		if ( m % n > 0 ) {
 			cnt++;
 		}
-		// 3항연산으로 보여줄 수도 있음
-//		System.out.println(m % n > 0 ? cnt + 1 : cnt );
-		
 		System.out.println("m	n	출력");
 		System.out.print(m+"	"+n+"	"+cnt);
 		return cnt;
