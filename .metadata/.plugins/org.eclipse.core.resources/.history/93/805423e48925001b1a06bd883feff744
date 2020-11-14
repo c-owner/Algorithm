@@ -11,7 +11,6 @@ public class ex1 {
 		System.out.print("몇명의 인원을 설정 하시겠습니까? :");
 		cnt = sc.nextInt();
 		String[] name = new String[cnt];
-		
 		return name;
 	}
 	
@@ -86,6 +85,7 @@ public class ex1 {
 		System.out.println("6. 명단 출력");
 	}
 	public static void main(String[] args) {
+		final int num11 = 12;
 		/* 사이냅소프트 면접 문제 
 		 * 
 		 * 주어진 문자열(공백 없이 쉼표로 구분되어 있음)을 가지고 아래 문제에 대한 프로그램을 작성
@@ -117,7 +117,6 @@ public class ex1 {
 				name = overlapDelete(); 
 				break;
 			case 4: 
-				
 				break;
 			case 5:
 				
