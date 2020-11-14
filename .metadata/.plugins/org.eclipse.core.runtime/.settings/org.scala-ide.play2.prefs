@@ -1,13 +1,10 @@
 eclipse.preferences.version=1
-route.action.colour=224,226,228
 route.actionClass.colour=202,230,130
 route.actionMethod.colour=243,246,238
-route.actionPackage.colour=224,226,228
 route.comment.colour=153,150,139
 route.default.colour=246,243,232
 route.httpKeyword.colour=138,198,242
 route.uri.colour=149,228,84
-route.uriDynamic.colour=224,226,228
 syntaxColouring.bracket.colour=243,246,238
 syntaxColouring.default.colour=243,246,238
 syntaxColouring.keyword.colour=138,198,242

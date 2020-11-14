@@ -75,7 +75,7 @@ public class MainAct {
 		
 		
 		SmartPhone sp1 = new SmartPhone();
-							new SmartPhone();
+						 new SmartPhone();
 		SmartPhone sp2 = new SmartPhone();
 		
 		

@@ -18,7 +18,6 @@ org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.number.color=240,128
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.punctuation.color=246,243,232
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.regexp.color=149,228,84
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.resourceRef.color=202,230,130
-org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.resourceTitle.color=160,130,189
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.spaces.color=246,243,232
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.string.color=149,228,84
 org.cloudsmith.geppetto.pp.dsl.PP.syntaxColorer.tokenStyles.task.color=172,193,172
