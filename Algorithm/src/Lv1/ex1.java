@@ -30,7 +30,7 @@ public class ex1 {
 	}
 	
 	static String[] sameName() {
-		int overlap = 0;
+		int overlap = 0; 
 		for (int i = 0; i < name.length; i++ ) {
 			for(int j = 1; j < name[i].length(); j++) {
 				if(name[i].equals(name[j])) {
