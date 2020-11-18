@@ -7,13 +7,16 @@
 	1.0.10 > 1.0.3  
 	어떤 버전이 높은지 
  */
-package Lv1;
+package Lv1_2;
 
 public class Lexicographical_order {
 
+	
 	public static void main(String[] args) {
 		
-
+		
 	}
+	
+	
 
 }
