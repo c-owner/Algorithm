@@ -1,0 +1,17 @@
+package Lv1;
+
+import java.util.Scanner;
+
+public class tapTransSpace {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		String tab = sc.nextLine();
+		
+		
+		
+
+	}
+
+}

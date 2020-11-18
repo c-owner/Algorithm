@@ -9,11 +9,19 @@
  */
 package Lv1_2;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Lexicographical_order {
 
 	
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
+		ArrayList<String> dash = new ArrayList<String>();
+		
+		System.out.println("버전 입력 >");
+		String num = sc.next();
 		
 	}
 	
