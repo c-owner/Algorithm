@@ -35,7 +35,7 @@ public class greedy {
 			}
 		}
 		
-		System.out.println("킹성비 : "+totalP/totalM);
+		System.out.println("가성비 : "+totalP/totalM);
 		// 가성비 = > 성능 / 금액 
 		
 	}
