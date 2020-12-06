@@ -15,7 +15,7 @@
             <entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/classes"/>
         </bootpath>
         <extensionDirs>
-            <entry path="/Users/iyu/Library/Java/Extensions"/>
+            <entry path="/Users/corner/Library/Java/Extensions"/>
             <entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/ext"/>
             <entry path="/Library/Java/Extensions"/>
             <entry path="/Network/Library/Java/Extensions"/>
