@@ -5,37 +5,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("동전의 종류 개수 입력 > ");
+
         int n = sc.nextInt();
-
-        int[] nArr = {1,5,10,50,100,500,1000,5000,10000,50000};
-
-        int cnt = 0; // 최소 동전개수
-        System.out.print("> ");
         int k = sc.nextInt(); // 가치의 합
-        int i = 10;
 
-            for(int j = 0; j < n; j++  ) {
-                System.out.println(nArr[j]);
-            }
-        if( n >= 1 && n <= 10 ) {
+        int[] coin = new int[n];
 
-            while (k > 0) {
-                if ( k >= nArr[n-1]) {
-                    k -= nArr[n - 1];
-                    cnt++;
-                }
-               if ( k < nArr[n - 1]) {
-                   n--;
-               }
+        for (int i =0; i < n; i++ ){
+            coin[i] = sc.nextInt();
+        }
 
-                if (k == 0) {
-                    break;
-                }
-
+        int count = 0;
+        for (int i = n - 1; i >= 0; i-- ) {
+            if(coin[i] <= k ) {
+                count += ( k / coin[i]);
+                k = k % coin[i];
             }
         }
-        System.out.println(cnt);
+        System.out.println(count);
+
 
     }
 }
