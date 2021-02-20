@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println(3+1+4+3+2+2+4+3+5+1);
         // n번은 사람들의 번호
         System.out.print("사람의 수 입력 > ");
         int n = sc.nextInt();
