@@ -39,7 +39,6 @@ public class Main {
             }
         });
 
-
         int cnt = 0;  // 회의 가능한 최대 개수
         int end_time = 0; // 이전 직전 시간
 
